@@ -1,0 +1,8 @@
+<form action="/movies/<%= @movie.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="text" value="<%= @movie.title %>" name="title">
+  <input type="text" value="<%= @movie.director %>" name="director">
+  <input type="text" value="<%= @movie.description %>" name="description">
+  Showing ? <input type="checkbox" value="<%= @movie.showing %>" name="showing">
+  <input type="submit" value="Edit Movie">
+</form>
